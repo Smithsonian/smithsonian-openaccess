@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "si_openaccess"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Luis J. Villanueva", email="villanueval@si.edu" },
 ]
 description = "Python module to query the Smithsonian Institution Open Access API."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.6"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: Apache Software License",
