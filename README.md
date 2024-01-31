@@ -31,12 +31,18 @@ python3 -m pip install si_openaccess
 
 ## Usage
 
+### Load module 
+
+```python
+from si_openaccess import si_openaccess
+```
+
 ### Get Content
 
 To fetch content based on id/url of an object ([docs](https://edan.si.edu/openaccess/apidocs/#api-content-content)):
 
 ```python
-content(id=[ITEM ID], api_key=[YOUR API KEY])
+si_openaccess.content(id=[ITEM ID], api_key=[YOUR API KEY])
 ```
 
 ### Fetch statistics
@@ -44,7 +50,7 @@ content(id=[ITEM ID], api_key=[YOUR API KEY])
 To fetch stats for CC0 objects/media ([docs](https://edan.si.edu/openaccess/apidocs/#api-metrics-stats)):
 
 ```python
-metrics_stats(api_key=[YOUR API KEY])
+si_openaccess.metrics_stats(api_key=[YOUR API KEY])
 ```
 
 ### Search contents based on category
@@ -52,7 +58,7 @@ metrics_stats(api_key=[YOUR API KEY])
 To fetch content based on a query against a category. art_design, history_culture or science_technology ([docs](https://edan.si.edu/openaccess/apidocs/#api-search-category_search)):
 
 ```python
-def category_search(q=[SEARCH TERMS], category=[CATEGORY], start=0, rows=10, sort=[SORT], api_key=[YOUR API KEY])
+si_openaccess.category_search(q=[SEARCH TERMS], category=[CATEGORY], start=0, rows=10, sort=[SORT], api_key=[YOUR API KEY])
 ```
 
 Values for `category` are:
@@ -74,7 +80,7 @@ Values for `sort` are:
 To fetch content based on a query ([docs](https://edan.si.edu/openaccess/apidocs/#api-search-search)):
 
 ```python
-search(q=[SEARCH TERMS], start=0, rows=10, sort=[SORT], type=[TYPE], row_group=[ROW_GROUP], api_key=[YOUR API KEY])
+si_openaccess.search(q=[SEARCH TERMS], start=0, rows=10, sort=[SORT], type=[TYPE], row_group=[ROW_GROUP], api_key=[YOUR API KEY])
 ```
 
 Values for `sort` are:
@@ -103,7 +109,7 @@ Values for `row_group` are:
 To Fetches an array of terms based term category ([docs](https://edan.si.edu/openaccess/apidocs/#api-search-terms)):
 
 ```python
-search_terms(category=[CATEGORY], starts_with=None, api_key=[YOUR API KEY])
+si_openaccess.search_terms(category=[CATEGORY], starts_with=None, api_key=[YOUR API KEY])
 ```
 
 Values for `category` are:
