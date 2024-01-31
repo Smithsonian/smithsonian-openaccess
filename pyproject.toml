@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "si_openaccess"
+version = "0.1"
+authors = [
+  { name="Luis J. Villanueva", email="villanueval@si.edu" },
+]
+description = "Python module to query the Smithsonian Institution Open Access API."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["requests"]
+
+[project.urls]
+"Homepage" = "https://github.com/Smithsonian/smithsonian-openaccess"
+"Bug Tracker" = "https://github.com/Smithsonian/smithsonian-openaccess/issues"
