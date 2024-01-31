@@ -35,7 +35,7 @@ The API requires you to provide your own 'api_key' value. Please register with h
 To fetch content based on id/url of an object ([docs](https://edan.si.edu/openaccess/apidocs/#api-content-content)):
 
 ```python
-content(id=[ITEM ID], api_key=api_key)
+content(id=[ITEM ID], api_key=[YOUR API KEY])
 ```
 
 ### Fetch statistics
@@ -43,7 +43,7 @@ content(id=[ITEM ID], api_key=api_key)
 To fetch stats for CC0 objects/media ([docs](https://edan.si.edu/openaccess/apidocs/#api-metrics-stats)):
 
 ```python
-metrics_stats(api_key=api_key)
+metrics_stats(api_key=[YOUR API KEY])
 ```
 
 ### Search contents based on category
@@ -51,7 +51,7 @@ metrics_stats(api_key=api_key)
 To fetch content based on a query against a category. art_design, history_culture or science_technology ([docs](https://edan.si.edu/openaccess/apidocs/#api-search-category_search)):
 
 ```python
-def category_search(q=[SEARCH TERMS], category=[CATEGORY], start=0, rows=10, sort='relevancy', api_key=api_key)
+def category_search(q=[SEARCH TERMS], category=[CATEGORY], start=0, rows=10, sort=[SORT], api_key=[YOUR API KEY])
 ```
 
 Values for `category` are:
@@ -73,7 +73,7 @@ Values for `sort` are:
 To fetch content based on a query ([docs](https://edan.si.edu/openaccess/apidocs/#api-search-search)):
 
 ```python
-search(q=[SEARCH TERMS], start=0, rows=10, sort='relevancy', type='edanmdm', row_group='objects', api_key=api_key)
+search(q=[SEARCH TERMS], start=0, rows=10, sort=[SORT], type=[TYPE], row_group=[ROW_GROUP], api_key=[YOUR API KEY])
 ```
 
 Values for `sort` are:
@@ -102,7 +102,7 @@ Values for `row_group` are:
 To Fetches an array of terms based term category ([docs](https://edan.si.edu/openaccess/apidocs/#api-search-terms)):
 
 ```python
-search_terms(category=None, starts_with=None, api_key=api_key)
+search_terms(category=[CATEGORY], starts_with=None, api_key=[YOUR API KEY])
 ```
 
 Values for `category` are:
@@ -115,3 +115,5 @@ Values for `category` are:
  * `place`
  * `topic`
  * `unit_code`
+
+The value for `starts_with` is optional.
