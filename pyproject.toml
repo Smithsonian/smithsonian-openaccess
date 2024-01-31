@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "si_openaccess"
-version = "0.1"
+version = "0.1.1"
 authors = [
   { name="Luis J. Villanueva", email="villanueval@si.edu" },
 ]

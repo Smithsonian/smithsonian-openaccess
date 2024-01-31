@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
 # Python module to query the Smithsonian Institution Open Access API
-# v 0.1
+# v 0.1.1
 # 
 # 31 Jan 2024
 #
