@@ -24,6 +24,10 @@ Or:
 python3 -m pip install si_openaccess
 ```
 
+## Requirements
+
+The API requires you to provide your own 'api_key' value. Please register with https://api.data.gov/signup/ to get a key.
+
 ## Usage
 
 ### Get Content
