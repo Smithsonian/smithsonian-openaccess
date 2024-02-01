@@ -26,7 +26,7 @@ python3 -m pip install si_openaccess
 
 ## Requirements
 
-* The module requires Python 3.11 or higher.
+* The module requires Python 3.6 or higher.
 * The API requires you to provide your own 'api_key' value. Please register with https://api.data.gov/signup/ to get a key.
 
 ## Usage
